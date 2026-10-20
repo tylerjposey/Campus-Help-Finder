@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f1e8">
+    <meta name="description" content="Find free student support on campus.">
+    <title>Campus Help Finder</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="./script.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="masthead">
+        <a class="wordmark" href="#" aria-label="Campus Help Finder home">
+          <span class="mark" aria-hidden="true">C</span>
+          <span>Campus <span class="wordmark-light">Help Finder</span></span>
+        </a>
+        <span class="edition">FREE STUDENT RESOURCES</span>
+      </header>
+
+      <section class="intro" aria-labelledby="page-title">
+        <p class="eyebrow"><span class="eyebrow-rule"></span> A good place to start</p>
+        <h1 id="page-title">Support is part<br class="desktop-break"> of the <em>journey.</em></h1>
+        <p class="intro-copy">A simple guide to free help available to students. Find the right place, one step at a time.</p>
+
+        <label class="search-wrap" for="resource-search">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="6.3"></circle>
+            <path d="m15.5 15.5 4.2 4.2"></path>
+          </svg>
+          <input id="resource-search" type="search" placeholder="Search student support…" autocomplete="off">
+          <span class="search-hint" aria-hidden="true">⌕</span>
+        </label>
+      </section>
+
+      <section class="resources" aria-labelledby="resources-title">
+        <div class="section-heading">
+          <h2 id="resources-title">Find your support</h2>
+          <p><span id="result-count">6</span> free resources</p>
+        </div>
+
+        <div class="resource-grid" id="resource-grid">
+          <article class="resource-card" data-search="food pantry groceries meals food">
+            <div class="card-top"><span class="number">01</span><span class="card-symbol symbol-food" aria-hidden="true">F</span></div>
+            <h3>Food Pantry</h3>
+            <p>Pick up free groceries and everyday essentials through your campus pantry.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card" data-search="counseling mental health wellbeing therapy">
+            <div class="card-top"><span class="number">02</span><span class="card-symbol symbol-counsel" aria-hidden="true">C</span></div>
+            <h3>Counseling</h3>
+            <p>Connect with confidential mental health support and someone ready to listen.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card" data-search="tutoring study academic learning">
+            <div class="card-top"><span class="number">03</span><span class="card-symbol symbol-tutor" aria-hidden="true">T</span></div>
+            <h3>Tutoring</h3>
+            <p>Get free one-to-one or small-group help with coursework and study skills.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card" data-search="legal aid lawyer advice rights">
+            <div class="card-top"><span class="number">04</span><span class="card-symbol symbol-legal" aria-hidden="true">L</span></div>
+            <h3>Legal Aid</h3>
+            <p>Speak with a legal professional about common concerns and your rights.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card" data-search="childcare child care family">
+            <div class="card-top"><span class="number">05</span><span class="card-symbol symbol-child" aria-hidden="true">K</span></div>
+            <h3>Childcare</h3>
+            <p>Explore affordable childcare options and family support for student parents.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+
+          <article class="resource-card" data-search="emergency housing shelter home">
+            <div class="card-top"><span class="number">06</span><span class="card-symbol symbol-housing" aria-hidden="true">H</span></div>
+            <h3>Emergency Housing</h3>
+            <p>Find short-term housing support if you need a safe place to stay.</p>
+            <a href="#" class="learn-more">Learn more <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="no-results" id="no-results" hidden>No matching support found. Try another search.</p>
+      </section>
+
+      <footer class="footer">
+        <span>Campus Help Finder</span>
+        <span>Free support, all in one place.</span>
+      </footer>
+    </main>
+  </body>
+</html>
